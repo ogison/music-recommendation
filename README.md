@@ -8,25 +8,12 @@ Python 3.7.10
 tensorflow 2.5.0  
 Numpy   
 Pickle  
-
- 
-# Installation
- 
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
-```bash
-pip install huga_package
-```
  
 # Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
-```
+##Datasets
+[lastfmの視聴履歴のデータセット](http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html)を使います。  
+ダウンロードして解凍したら以下の場所にデータを配置してください。　  
+～/datasets/lastfm/
  
 # Note
  
