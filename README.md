@@ -1,7 +1,7 @@
 # music-recommendation
-# DEMO
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+
+対象ユーザの視聴履歴を使って学習して次に再生される楽曲を予測します。論文["Session-based Recommendations With Recurrent Neural Networks"](https://arxiv.org/abs/1511.06939)を元に作成しました。
+
  
 # Features
  
