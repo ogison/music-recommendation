@@ -4,13 +4,10 @@
  
 # Requirement
  
-Python 3.7.10
-
-tensorflow 2.5.0
-
-Numpy 
-
-Pickle
+Python 3.7.10  
+tensorflow 2.5.0  
+Numpy   
+Pickle  
 
  
 # Installation
