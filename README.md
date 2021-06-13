@@ -10,7 +10,7 @@ Numpy
 Pickle  
  
 # Usage
-##Datasets
+## Datasets
 [lastfmの視聴履歴のデータセット](http://ocelma.net/MusicRecommendationDataset/lastfm-1K.html)を使います。  
 ダウンロードして解凍したら以下の場所にデータを配置してください。　  
 ～/datasets/lastfm/
