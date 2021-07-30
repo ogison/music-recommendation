@@ -18,6 +18,6 @@ Pickle
 ## Preprocessing
 `preprocess.py`を実行して計4段階に分けてデータの前処理を行います。
 
-## Running the RNN models
+## Running RNN models
 `main.py`を実行してデータの学習と評価を行います。Recall@5の結果がよくなるたび、`save`フォルダにモデルのパラメータが保存されます。  
 また、`testlog`フォルダに評価結果が保存されます。`save`フォルダは作成されていない場合、自動的に作成します。
