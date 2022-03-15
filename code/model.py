@@ -21,7 +21,6 @@ class GRU(object):
         self.MAX_EPOCHS = args.MAX_EPOCHS
         self.BATCHSIZE = args.BATCHSIZE
         self.dataset_dir = args.dataset_dir
-        self.dataset_dir = args.dataset_dir
         self.epoch_file = './epoch_file-simple-rnn-'+args.dataset_dir+'.pickle'
         self.epoch = datahandler.get_latest_epoch(self.epoch_file)
         self.datahandler = datahandler
