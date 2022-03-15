@@ -1,6 +1,6 @@
 # music-recommendation
 
-対象ユーザの視聴履歴を使って学習して次に再生される楽曲を予測します。論文["Session-based Recommendations With Recurrent Neural Networks"](https://arxiv.org/abs/1511.06939)を元に作成しました。コードの書き方は[master_thesis](https://github.com/olesls/master_thesis)を参考にしてます。
+対象ユーザの再生履歴を使って学習して次に再生される楽曲を予測します。論文["Session-based Recommendations With Recurrent Neural Networks"](https://arxiv.org/abs/1511.06939)を元に作成しました。コードの書き方は[master_thesis](https://github.com/olesls/master_thesis)を参考にしてます。
  
 # Requirement
  
