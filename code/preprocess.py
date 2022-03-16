@@ -17,7 +17,7 @@ parser.add_argument('--MINIMUM_REQUIRED_SESSIONS', dest='MINIMUM_REQUIRED_SESSIO
 args = parser.parse_args()
 
 # current directory
-home = os.path.dirname(os.path.abspath(__file__))
+home = os.getcwd()
 
 # Here you can change the path to the dataset
 DATASET_DIR = home + '/datasets/'+args.dataset_dir
