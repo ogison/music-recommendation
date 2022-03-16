@@ -27,7 +27,7 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
     # Specify path to dataset here
-    home = os.path.dirname(os.path.abspath(__file__))
+    home = os.getcwd()
     dataset_path = home + '/datasets/'+args.dataset_dir+'/4_train_test_split.pickle'
     date_now = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d')
     log_file = './testlog/'+str(date_now)+'-testing-plain-rnn.txt'
