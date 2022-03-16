@@ -27,7 +27,7 @@ class GRU(object):
         self.best_recall5 = -1
         self.N_ITEMS = self.datahandler.get_num_items()
 
-        home = os.path.dirname(os.path.abspath(__file__))
+        home = os.getcwd()
         self.save_path = home + '/save/'+self.dataset_dir
         self.save_final_dir = self.save_path + '/final/'
         self.save_best_dir = self.save_path + '/best/'
