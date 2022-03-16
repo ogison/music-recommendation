@@ -55,8 +55,6 @@ if __name__ == '__main__':
     ## The model
     ##
     print("Creating model")
-    cpu = ['/cpu:0']
-    gpu = ['/gpu:0', '/gpu:1']
 
     model = GRU(args,datahandler)
 
