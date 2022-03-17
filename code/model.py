@@ -21,6 +21,7 @@ class GRU(object):
         self.MAX_EPOCHS = args.MAX_EPOCHS
         self.BATCHSIZE = args.BATCHSIZE
         self.dataset_dir = args.dataset_dir
+        self.dataset_dir = args.dataset_dir
         self.epoch_file = './epoch_file-simple-rnn-'+args.dataset_dir+'.pickle'
         self.epoch = datahandler.get_latest_epoch(self.epoch_file)
         self.datahandler = datahandler
@@ -50,7 +51,7 @@ class GRU(object):
 
 
     def _build_model(self,args):
-        
+
         self.model = tf.keras.models.Sequential([
           tf.keras.layers.Embedding(self.N_ITEMS, args.EMBEDDING_SIZE,mask_zero=True,trainable=True),
           tf.keras.layers.GRU(args.GRU_hidden,return_sequences=True,activation=None,dropout=args.dropout_late,recurrent_dropout=args.recurrent_dropout_late),
@@ -161,13 +162,14 @@ class GRU(object):
             xinput, targetvalues, sl = self.datahandler.get_next_test_batch()
 
         # Print final test stats for epoch
-        test_stats, current_recall5, current_recall10, current_recall20, current_mrr5, current_mrr10, current_mrr20 = tester.get_stats_and_reset()
+        # test_stats, current_recall5, current_recall10, current_recall20, current_mrr5, current_mrr10, current_mrr20 = tester.get_stats_and_reset()
+        test_stats, current_recall5, current_mrr5= tester.get_stats_and_reset()
         print("Recall@5 = " + str(current_recall5))
-        print("Recall@10 = " + str(current_recall10))
-        print("Recall@20 = " + str(current_recall20))
+        # print("Recall@10 = " + str(current_recall10))
+        # print("Recall@20 = " + str(current_recall20))
         print("MRR@5 = " + str(current_mrr5))
-        print("MRR@10 = " + str(current_mrr10))
-        print("MRR@20 = " + str(current_mrr20))
+        # print("MRR@10 = " + str(current_mrr10))
+        # print("MRR@20 = " + str(current_mrr20))
         self.model.save_weights(os.path.join(self.save_final_dir,self.checkpoint_file))
 
         if self.save_best:
