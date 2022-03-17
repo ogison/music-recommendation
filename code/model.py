@@ -176,7 +176,7 @@ class GRU(object):
             if current_recall5 > self.best_recall5:
                 # Save the model
                 print("Saving model.")
-                model.save_weights(os.path.join(self.save_best_dir,self.checkpoint_file))
+                self.model.save_weights(os.path.join(self.save_best_dir,self.checkpoint_file))
                 print("|- Model saved in file:",self.save_best_dir)
 
                 self.best_recall5 = current_recall5
